@@ -1,0 +1,62 @@
+.Lpage{
+    height: 100%;
+    background-image: url('banner2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-family: 'Roboto','Arial';
+    padding: 80px;;
+    height: 80vh;
+    background-color: rgba(3, 37, 65, 0.63);
+    color: white;
+  }
+
+  h2{
+    margin-bottom:20px;
+  }
+#search {
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    font-size: 1.1em;
+    color: rgba(0,0,0,0.5);
+    border: none;
+    margin: 50px auto;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+input[type="submit"]{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    padding: 10px 26px;
+    float: right;
+    cursor: pointer;
+    border: none;
+    bottom: 96px;
+    background:rgb(3, 37, 65);
+    border-radius: 30px;
+    position: relative;
+    color: #fff;
+}
+.search-bar{
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+input[type="submit"]:hover{
+    background:rgb(1, 30, 53);
+}
+#search_form{
+    width: 100%;
+    margin: 105px auto;
+}
