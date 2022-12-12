@@ -1,5 +1,5 @@
 import './css/Item.css'
-import starIcon from  './css/star.png'
+import starIcon from  '../assets/star.png'
 
 export default function Item(props){
     return (
