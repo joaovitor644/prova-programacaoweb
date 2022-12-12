@@ -1,0 +1,48 @@
+#formContact{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+#formContact label{
+    margin-top: 10px;
+
+}
+#formContact input{
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(206, 206, 206);
+    padding: 8px;
+    margin-top: 5px;
+    outline: none;
+}
+#formContact textarea{
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(206, 206, 206);
+    outline: none;
+    display: block;
+    resize: none;
+    margin-bottom: 125px;
+}
+
+#formContact p{
+    margin-bottom: 20px;
+
+}
+#formContact input[type="submit"]{
+    display: block;
+    height: 46px;
+    padding: 10px 26px;
+    float: left;
+    cursor: pointer;
+
+    border: none;
+    width: 120px;
+    bottom: 96px;
+    background:rgb(3, 37, 65);
+    border-radius: 30px;
+    position: relative;
+    color: #fff;
+}

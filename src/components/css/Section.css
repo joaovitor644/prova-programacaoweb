@@ -1,0 +1,12 @@
+section{
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 20px;
+    min-height: 55vh;
+}
+section article p{
+    text-align: justify;
+    white-space: wrap; 
+    overflow-wrap: break-word;
+}
