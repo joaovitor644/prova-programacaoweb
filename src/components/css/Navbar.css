@@ -7,10 +7,11 @@
 .menu ul li {
     list-style: none;
     margin-left: 10px;
-
+    max-height: 30px;
 }
 .menu ul {
     display: flex;
+    margin-top:15px ;
 }
 .menu ul li a{
     text-decoration: none;
@@ -23,16 +24,47 @@
     background-color: white;
     color: black;
 }
-.menu p{
-    font-size: larger;
-    font-family: 'Roboto',Arial;
-    color: #fff;
-}
 input[type='checkbox']{
     display: none;
 }
 .menu label{
     display: none;
+}
+.menu p a img{
+    width: 50px;
+    height: 50px;
+}
+#searchBar {
+    width: 100%;
+    font-size: 1.1em;
+    color: rgb(31, 29, 29);
+    border: none;
+    margin:  auto;
+    border-radius: 30px;
+    padding: 10px ;
+    background-color: rgb(206, 206, 206);
+}
+#search-form #subSearch{
+    display: block;
+    cursor: pointer;
+    border: none;
+    margin-top: 56px;
+    background:rgb(255, 255, 255);
+    border-radius: 40px;
+    height: 40px;
+    padding: 5px 26px;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+.search-container{
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+#search-form{
+    position: relative;
+    margin: -10px auto;
 }
 @media only screen and (max-width: 600px) {
     .menu ul {
@@ -81,6 +113,7 @@ input[type='checkbox']{
     }
     .container-nav{
         display: flex;
+        position: relative;
         flex-direction: column;
     }
 }

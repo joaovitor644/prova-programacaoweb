@@ -1,6 +1,6 @@
 .Lpage{
-    height: 100%;
-    background-image: url('banner2.jpg');
+    height: auto;
+    background-image: url('../../assets/banner2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -13,7 +13,7 @@
     text-align: justify;
     font-family: 'Roboto','Arial';
     padding: 80px;;
-    height: 80vh;
+    height: auto;
     background-color: rgba(3, 37, 65, 0.63);
     color: white;
   }
@@ -26,11 +26,12 @@
     height: 46px;
     line-height: 46px;
     font-size: 1.1em;
-    color: rgba(0,0,0,0.5);
+    color: rgb(31, 29, 29);
     border: none;
     margin: 50px auto;
     border-radius: 30px;
     padding: 10px 20px;
+    background-color: rgb(206, 206, 206);
 }
 input[type="submit"]{
     display: block;
