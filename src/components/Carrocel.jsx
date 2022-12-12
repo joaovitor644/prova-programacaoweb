@@ -47,10 +47,11 @@ const [data,setData] = useState([]);
                 <div className="gallery-wrapper" ref={carrocel}>
                     <div className="gallery" >
                         {
+                            
                             data.length == 0? console.log(data) : (
                                 data.map((elem) => {
                                     return (
-                                        <Item name={elem.title}  img={"https://image.tmdb.org/t/p/w500" + elem.poster_path} aval={elem.vote_average}/>
+                                        <Item name={props.type == "Film"? elem.title : elem.name}  img={"https://image.tmdb.org/t/p/w500" + elem.poster_path} aval={elem.vote_average}/>
                                     )
                                 })
                             )
