@@ -51,7 +51,12 @@ const [data,setData] = useState([]);
                             data.length == 0? console.log(data) : (
                                 data.map((elem) => {
                                     return (
-                                        <Item name={props.type == "Film"? elem.title : elem.name}  img={"https://image.tmdb.org/t/p/w500" + elem.poster_path} aval={elem.vote_average}/>
+                                        <Item 
+                                            name={props.type == "Film"? elem.title : elem.name}  
+                                            img={"https://image.tmdb.org/t/p/w500" + elem.poster_path} 
+                                            aval={elem.vote_average}
+                                            linkinfo={props.type == "Film"? "/filminfo/" + elem.id : "/serieinfo/" + elem.id}
+                                        />
                                     )
                                 })
                             )
