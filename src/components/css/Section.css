@@ -10,3 +10,7 @@ section article p{
     white-space: wrap; 
     overflow-wrap: break-word;
 }
+section article h1{
+    color:black;
+    font-size: 30px;
+}
