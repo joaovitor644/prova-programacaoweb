@@ -1,0 +1,40 @@
+.container-Info{
+    display: flex;
+}
+.container-Info .imgInfo img#poster {
+    width: 300px;
+    border-radius: 20px;
+}
+.containerFilm{
+    padding: 20px;
+}
+.container-Info .imgInfo{
+    display: flex;
+    flex-direction: column;
+}
+.container-Info .imgInfo .infoFilm{
+    display: grid;
+    flex-direction: column;
+    padding: 20px;
+}
+.container-Info .imgInfo span{
+    margin-top: 10px;
+}
+span img{
+    width:18px;
+    margin-right: 5px;
+}
+
+.container-Info .imgInfo #genInfo span{
+    margin-left: 10px;
+
+}
+.container-Info .imgInfo #genInfo{
+    margin-top: 10px;
+}
+#classificate{
+    background-color: rgb(30, 15, 71);
+    padding: 5px;
+    max-width: 30px;
+    color: white;
+}
