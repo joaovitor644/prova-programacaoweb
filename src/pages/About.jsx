@@ -15,7 +15,9 @@ export default function About(){
             <Footer 
                 aboutUrl="/about"
                 contactUrl="/contact"
-            />
+                filmsUrl="/films"
+                seriesUrl="/series"
+            /> 
         </>
     );
 }

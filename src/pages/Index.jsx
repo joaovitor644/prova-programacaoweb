@@ -22,10 +22,13 @@ export default function Index(){
             }/>
             <Carrocel title="Filmes Populares" url={urlCarrocelFilm} type="Film"/>
             <Carrocel title="Series Populares" url={urlCarrocelSerie} type="Series"/>
+           
             <Footer 
                 aboutUrl="/about"
                 contactUrl="/contact"
-            />
+                filmsUrl="/films"
+                seriesUrl="/series"
+            /> 
         </>
     );
 }
