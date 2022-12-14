@@ -9,6 +9,8 @@ export default function Banner(props){
               type={props.navType} 
               aboutUrl="/about"
               contactUrl="/contact"
+              filmsUrl="/films"
+              seriesUrl="/series"
             />
             <div class="content">
               <Section content={props.content}/>
