@@ -5,6 +5,10 @@ import Index from './pages/Index';
 import About from './pages/About';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Contact from './pages/Contact';
+import Films from './pages/Films';
+import Series from './pages/Series'
+import FilmInfo from './pages/FilmInfo';
+import SerieInfo from './pages/SerieInfo';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +22,24 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: <Contact />
+  },
+  {
+    path: '/films',
+    element: < Films />
+  },
+  {
+    path: '/series',
+    element: <Series />
+  },
+  {
+    path: '/filmInfo/:id',
+    element: <FilmInfo />
+  },
+  {
+    path: '/serieInfo/:id',
+    element: <SerieInfo />
   }
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
