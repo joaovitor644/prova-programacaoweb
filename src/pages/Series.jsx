@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Banner from '../components/Banner'
 import Carrocel from '../components/Carrocel'
 import axios from 'axios'
+import { Form } from 'react-router-dom'
 const key = import.meta.env.VITE_API_KEY
 const urlData = "https://api.themoviedb.org/3/discover/tv?api_key="+key+"&with_genres="
 
@@ -31,6 +32,13 @@ export default function Films(){
            <Banner content={
                 <>
                 <h1>Séries</h1>
+                <Form action="/search" method="get">
+                    <label className='search-bar'>
+                    <input dir="auto" id="search" name='keyword' type="text" tabindex="1"  placeholder="Buscar por uma Série" />
+                    <input type="hidden" value="serie" name='type'/>
+                    <input type="submit" id="subSearch"value="Search" />
+                </label>
+                </Form>
                     {data.length == 0? console.log("Carregando..") : (
                         data.map(gen => {
                             return (
