@@ -9,6 +9,7 @@ import Films from './pages/Films';
 import Series from './pages/Series'
 import FilmInfo from './pages/FilmInfo';
 import SerieInfo from './pages/SerieInfo';
+import Search from './pages/Search';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,19 @@ const router = createBrowserRouter([
   {
     path: '/serieInfo/:id',
     element: <SerieInfo />
+  },
+  {
+    path: '/search',
+    element: <Search />,
+    loader:async ({request}) => {
+      let url = new URL(request.url)
+      let keyword = url.searchParams.get("keyword");
+      let type = url.searchParams.get("type");
+      return {
+          "keyword":keyword,
+          "type":type
+      }
+    }
   }
 
 ]);
