@@ -40,10 +40,10 @@ export default function Navbar(props){
                         <label htmlFor="check"><img src={menuIcon}/></label>        
                         <ul>
                             <li><a href="/">Home</a></li>
-                            <li><a href={props.aboutUrl}>About us</a></li>
-                            <li><a href={props.contactUrl}>Contact us</a></li>
+                            <li><a href={props.aboutUrl}>Sobre nós</a></li>
+                            <li><a href={props.contactUrl}>Fale conosco</a></li>
                             <li><a href={props.filmsUrl}>Filmes</a></li>
-                            <li><a href={props.seriesUrl}>Tv Series</a></li>
+                            <li><a href={props.seriesUrl}>Tv Séries</a></li>
                             
                         </ul>
                         
