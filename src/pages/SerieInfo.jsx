@@ -27,9 +27,8 @@ export default function FilmInfo(props){
             res2.data.results.map(elem => {
                 if(elem.iso_3166_1 == "BR"){
                     setDataMovie2(elem.rating)
-                } else {
-                    setDataMovie2("L")
                 }
+                console.log(elem)
             })
             
             await console.log(date)
@@ -71,11 +70,16 @@ export default function FilmInfo(props){
                         </div>
                         <div className="containerFilm">
                             <h2>{dataMovie.name}</h2>
-                            <p>{dataMovie.overview}</p>
+                            <p>{dataMovie.overview == ""? "Não há descrição" : dataMovie.overview}</p>
                         </div>
                     </div>
                 } />
-                <Footer />
+                <Footer 
+                    aboutUrl="/about"
+                    contactUrl="/contact"
+                    filmsUrl="/films"
+                    seriesUrl="/series"
+                /> 
             </>
         );
     } else {
