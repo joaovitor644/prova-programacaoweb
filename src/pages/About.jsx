@@ -10,7 +10,7 @@ export default function About(){
                     <p>FilmsAndSeries é um site que fornece dados atualizados de mais de diversos filmes e séries desde lança mentos a avaliações. Nós utilizamos a base de dados do "The Movie Database" para trazer contéúdos de forma autêntica , segura e precisa</p>
                 </>
             } style="height:80"
-             navType="search"
+             navType="#"
             />
             <Footer 
                 aboutUrl="/about"

@@ -23,7 +23,7 @@ export default function Contact(){
                         <input type="submit" value="Search" />
                     </form>
                 </>
-            } navType="search"/>
+            } navType="#"/>
             <Footer 
                 aboutUrl="/about"
                 contactUrl="/contact"
