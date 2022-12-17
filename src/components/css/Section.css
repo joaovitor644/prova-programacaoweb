@@ -14,3 +14,22 @@ section article h1{
     color:black;
     font-size: 30px;
 }
+section article #containerSearch{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    align-items: flex-start;
+    margin: auto;
+    width: 100%;
+}
+section article #containerSearch .card{
+    max-width: 250px;
+
+    margin: auto ;
+}
+input[type="radio"]{
+    margin-left: 10px;
+}
+label{
+    margin-left: 10px;
+}
